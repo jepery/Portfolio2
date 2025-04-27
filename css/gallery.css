@@ -85,7 +85,7 @@ body.modal-open header {
     padding-bottom: 10rem;
 }
 
-.myva {
+.renewal {
     padding-top: 5rem; /* to avoid overlap with the fixed header */
     background: var(--second-bg-color);
     padding-bottom: 10rem;

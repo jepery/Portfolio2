@@ -53,7 +53,7 @@ ScrollReveal({
     delay: 200,
   });
   
-  ScrollReveal().reveal(".alchemist, .generator", { origin: "top" });
+  ScrollReveal().reveal(".alchemist, .webspark, .renewal", { origin: "top" });
   ScrollReveal().reveal(
     ".gallery, .gallery-item",
     { origin: "bottom" }
