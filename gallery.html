@@ -12,6 +12,8 @@
       />
 
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -26,107 +28,102 @@
         </nav>
     </header>
 
-    <section class="alchemist" id="client1">
-        <h1>Alchemist Nation</h1>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/AN/Gualter Amarelo.png" alt="A bold modern art piece featuring a blend of geometric shapes and vibrant colors, symbolizing the fusion of technology and creativity.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/Elise Micheals.png" alt="A minimalist design that showcases the beauty of simplicity, with clean lines and a monochromatic palette that emphasizes form and function.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/Steven Beaver.png" alt="An abstract illustration that uses organic shapes and contrasting colors to evoke a sense of motion and fluidity, representing the dynamic nature of art.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/image 3.png" alt="A creative logo design that combines traditional symbols with modern aesthetics, perfect for a brand that values heritage and innovation.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/Sample 2 Cover.png" alt="A colorful poster art piece that captures attention with its vibrant hues and intricate patterns, designed to engage and inspire viewers.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/new logo.png" alt="A typography experiment that explores the artistic potential of letterforms, using bold fonts and creative layouts to convey a powerful message.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/flyers.png" alt="An elegant flyer design that uses sophisticated graphics and a balanced layout to promote an upscale event, blending luxury with modernity.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/ticket.png" alt="A web banner concept designed to captivate online audiences, featuring eye-catching visuals and a clear call-to-action that drives engagement.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/ANsample1.png" alt="A brochure mockup that demonstrates professional design skills, with a focus on readability, organization, and visual appeal to effectively communicate information.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/AN/logo.jpg" alt="A business card layout that combines modern design trends with practical functionality, ensuring a memorable first impression and lasting brand identity.">
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/KoOFWUviOWg" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/acjTf5kbsV0" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/jPzRH6MVqy0" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/UT0FB7SPe8I" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/B51a2bzdjzA" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-        </div>
-    </section>
+    <style>
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.5s ease;
+        }
+      
+        .slide-content {
+          max-width: 100%;
+          max-height: 600px;
+          object-fit: contain;
+          border-radius: 20px;
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+          transition: all 0.5s ease;
+        }
+      
+        /* Make side images more shrunken + blurred */
+        .swiper-slide:not(.swiper-slide-active) .slide-content {
+          filter: blur(4px) brightness(0.7);
+          transform: scale(0.75); /* smaller side slides */
+        }
+      
+        .swiper-button-next, .swiper-button-prev {
+          color: white;
+        }
+        
+      </style>
 
-    <section class="generator" id="client2">
-        <h1>Generator Coaching and Consulting</h1>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_1.jpg" alt="A bold modern art piece featuring a blend of geometric shapes and vibrant colors, symbolizing the fusion of technology and creativity.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_2.jpg" alt="A minimalist design that showcases the beauty of simplicity, with clean lines and a monochromatic palette that emphasizes form and function.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_3.jpg" alt="An abstract illustration that uses organic shapes and contrasting colors to evoke a sense of motion and fluidity, representing the dynamic nature of art.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_4.jpg" alt="A creative logo design that combines traditional symbols with modern aesthetics, perfect for a brand that values heritage and innovation.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_1.jpg" alt="A bold modern art piece featuring a blend of geometric shapes and vibrant colors, symbolizing the fusion of technology and creativity.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_2.jpg" alt="A minimalist design that showcases the beauty of simplicity, with clean lines and a monochromatic palette that emphasizes form and function.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_3.jpg" alt="An abstract illustration that uses organic shapes and contrasting colors to evoke a sense of motion and fluidity, representing the dynamic nature of art.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_4.jpg" alt="A creative logo design that combines traditional symbols with modern aesthetics, perfect for a brand that values heritage and innovation.">
-            </div>
-            <div class="gallery-item">
-                <img src="images/GCC/GCC_image_4.jpg" alt="A creative logo design that combines traditional symbols with modern aesthetics, perfect for a brand that values heritage and innovation.">
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/2ulwShfO9GM" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/KoOFWUviOWg" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/acjTf5kbsV0" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/jPzRH6MVqy0" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/UT0FB7SPe8I" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
-            <div class="gallery-item">
-                <iframe src="https://www.youtube.com/embed/B51a2bzdjzA" frameborder="0" allowfullscreen alt="A design video showcasing..."></iframe>
-            </div>
+<section class="alchemist" id="client1" style="text-align: center; padding: 50px 0;">
+    <h1 style="color: white; font-size: 3rem; margin-bottom: 40px; padding-top: 80px;">Alchemist Nation</h1>
+  
+    <div class="swiper mySwiper" style="width: 100%; max-width: 1400px;">
+      <div class="swiper-wrapper">
+  
+        <!-- Images -->
+        <div class="swiper-slide">
+          <img src="images/AN/Gualter Amarelo.png" alt="..." class="slide-content" />
         </div>
-    </section>
+        <div class="swiper-slide">
+          <img src="images/AN/Elise Micheals.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/AN/Steven Beaver.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/AN/image 3.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/AN/Sample 2 Cover.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/AN/new logo.png" alt="..." class="slide-content" />
+        </div>
+  
+      </div>
+  
+      <!-- Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <section class="webspark" id="client2" style="text-align: center; padding: 50px 0;">
+    <h1 style="color: white; font-size: 3rem; margin-bottom: 40px;">Webspark Media</h1>
+  
+    <div class="swiper mySwiper" style="width: 100%; max-width: 1400px;">
+      <div class="swiper-wrapper">
+  
+        <!-- Images -->
+        <div class="swiper-slide">
+          <img src="images/WSM/April 1.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/WSM/April 2.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/WSM/April 3.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/WSM/April 5.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/WSM/April 6.png" alt="..." class="slide-content" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/WSM/April 7.png" alt="..." class="slide-content" />
+        </div>
+  
+      </div>
+  
+      <!-- Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
 
     <section class="myva">
         <h1>My Virtual Assistant</h1>
@@ -223,5 +220,18 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/gallery.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2.5,   // More slides visible!
+          centeredSlides: true,
+          spaceBetween: 5,     // Less gap!
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
