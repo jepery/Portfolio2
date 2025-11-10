@@ -55,10 +55,24 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 /*Typed JS*/
 
-const typed = new Typed('.multiple-text',{
-    strings: ['Web Developer', 'Video Editor', 'Graphic Artist'],
-    typeSpeed: 70,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
+const typed = new Typed('.multiple-text', {
+  strings: ['Web Developer', 'Video Editor', 'Graphic Artist'],
+  typeSpeed: 70,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+});
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  emailjs.sendForm("service_0frkc77", "template_cngnnvt", this)
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("❌ Failed to send message. Please try again.");
+      console.error("EmailJS error:", error);
+    });
 });

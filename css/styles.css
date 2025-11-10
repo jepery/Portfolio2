@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,14 +24,14 @@ html {
 
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 5rem;
 }
 
 .header {
@@ -47,11 +47,11 @@ section {
     z-index: 100;
 }
 
-.header.sticky{
+.header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
-.logo{
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
@@ -82,19 +82,21 @@ section {
     align-items: center;
 }
 
-.home-img img{
+.home-img img {
     width: 40vw;
     animation: floatIamge 4s ease-in-out infinite;
 }
 
-@keyframes floatIamge{
-    0%{
+@keyframes floatIamge {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-3.4rem);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
@@ -104,11 +106,11 @@ section {
     font-weight: 700;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
 
-span{
+span {
     color: var(--main-color);
 }
 
@@ -122,7 +124,7 @@ span{
     font-size: 1.6rem;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +139,7 @@ span{
     transition: .5s ease;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
@@ -156,9 +158,18 @@ span{
     transition: .5s ease;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: none;
 }
+
+#btnvideo {
+    pointer-events: none;
+    /* disables clicking */
+    opacity: 0.5;
+    /* makes it look disabled */
+    cursor: not-allowed;
+}
+
 
 .about {
     display: flex;
@@ -168,35 +179,35 @@ span{
     background: var(--second-bg-color);
 }
 
-.about-img img{
+.about-img img {
     width: 30vw;
     border: 5px solid #FFD700;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-.about-content h2{
+.about-content h2 {
     text-align: left;
     line-height: 1.2;
 }
 
-.about-content h3{
+.about-content h3 {
     font-size: 2.6rem;
 }
 
-.about-content p{
-    font-size:  1.6rem;
+.about-content p {
+    font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
-.services h2{
+.services h2 {
     margin-bottom: 5rem;
 }
 
-.services-container{
+.services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +215,7 @@ span{
     gap: 2rem;
 }
 
-.services-container .services-box{
+.services-container .services-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -214,41 +225,41 @@ span{
     transition: .5s ease;
 }
 
-.services-container .services-box:hover{
+.services-container .services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
-.services-box i{
+.services-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3{
+.services-box h3 {
     font-size: 2.6rem;
 }
 
-.services-box p{
+.services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
-.portfolio{
+.portfolio {
     background: var(--second-bg-color);
 }
 
-.portfolio h2{
+.portfolio h2 {
     margin-bottom: 4rem;
 }
 
-.portfolio-container{
+.portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box{
+.portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -257,22 +268,22 @@ span{
     border: 2px solid #FFD700;
 }
 
-.portfolio-box img{
+.portfolio-box img {
     width: 100%;
     transition: .5s ease;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer{
+.portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .8), var(--bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,20 +294,20 @@ span{
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
     transform: translateY(0%);
 }
 
-.portfolio-layer h4{
+.portfolio-layer h4 {
     font-size: 3rem;
 }
 
-.portfolio-layer p{
+.portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a{
+.portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -306,30 +317,30 @@ span{
     border-radius: 50%;
 }
 
-.portfolio-layer a i{
+.portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
 
-.contact h2{
+.contact h2 {
     margin-bottom: 3rem;
 }
 
-.contact form{
+.contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.contact form .input-box{
+.contact form .input-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -339,15 +350,15 @@ span{
     margin: .7rem 0;
 }
 
-.contact form .input-box input{
+.contact form .input-box input {
     width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
     resize: none;
 }
 
-.contact form .btn{
+.contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
 }
@@ -361,11 +372,11 @@ span{
     background: var(--second-bg-color);
 }
 
-.footer-text p{
+.footer-text p {
     font-size: 1.6rem;
 }
 
-.footer-iconTop a{
+.footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -378,29 +389,29 @@ span{
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.footer-iconTop a i{
+.footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
 
 /* Breakpoints */
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
-@media (max-width: 991px){
-    .header{
+@media (max-width: 991px) {
+    .header {
         padding: 2rem 3%;
     }
 
-    section{
+    section {
         padding: 10rem 3% 2rem;
     }
 
-    .services{
+    .services {
         padding-bottom: 7rem;
     }
 
@@ -413,12 +424,12 @@ span{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -430,29 +441,29 @@ span{
         display: none;
     }
 
-    .navbar.active{
+    .navbar.active {
         display: block;
     }
 
-    .navbar a{
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
 
-    .home{
+    .home {
         flex-direction: column;
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
     }
 
-    .home-content h1{
+    .home-content h1 {
         font-size: 5rem;
     }
 
-    .home-img img{
+    .home-img img {
         width: 70vw;
         margin-top: 4rem;
     }
@@ -461,54 +472,54 @@ span{
         flex-direction: column-reverse;
     }
 
-    .about img{
+    .about img {
         width: 50vw;
         margin-top: 4rem;
     }
 
-    .services h2{
+    .services h2 {
         margin-bottom: 3rem;
     }
 
-    .portfolio h2{
+    .portfolio h2 {
         margin-bottom: 3rem;
     }
 
-    .portfolio-container{
+    .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 617px){
-    .portfolio-container{
+@media (max-width: 617px) {
+    .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 450px){
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 50%;
     }
 
-    .contact form  .input-box input{
+    .contact form .input-box input {
         width: 100%;
     }
 }
 
-@media (max-width: 365px){
-    .home-img img{
+@media (max-width: 365px) {
+    .home-img img {
         width: 90vw;
     }
 
-    .about-img img{
+    .about-img img {
         width: 80vw;
     }
 
-    .footer{
+    .footer {
         flex-direction: column-reverse;
     }
 
-    .footer p{
+    .footer p {
         text-align: center;
         margin-top: 2rem;
     }
