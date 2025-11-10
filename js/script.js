@@ -68,7 +68,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
   emailjs.sendForm("service_0frkc77", "template_cngnnvt", this)
     .then(() => {
-      alert("✅ Message sent successfully!");
+      alert("✅ Message sent successfully");
       this.reset();
     })
     .catch((error) => {
